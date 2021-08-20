@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  margin-right: auto;
+  height: 25vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: %100;
+  li:first-child {
+  margin-left: 0;}
+}
+
+.App-link {
+  justify-content: right;
+
+  color: blue;
+  margin: 15px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Test-green {
+  color: blue;
+  text-align: center;
+  background-color: green;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  position:absolute;
+  top:30%;
+  left:30%;
+}
+
+
+.Test-red {
+  color: pink;
+  text-align: center;
+  background-color: red;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  position:absolute;
+  top:30%;
+  left:30%;
+}
+
+.Rose-bad {
+  font-weight: bold;
+  color: 'red';
+  text-align: center;
+  background-color: black;
+}
+
+.Rose-good {
+  color: blue;
+  text-align: center;
+  background-color: red;
+}
+
+.Flex-container {
+  display: flex;
+}
+
+.Flex-n {
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gray;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid gray;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid gray;
+  border-bottom: 50px solid transparent;
+}
+
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid gray;
+  border-bottom: 50px solid transparent;
+}
+
+.final-buttons {
+  border-radius: 2px;
+
+
+
+
+}
+
+.button {
+  position: relative;
+  background-color: #7b77f7;
+  border: none;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  transition-duration: 0.7s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
